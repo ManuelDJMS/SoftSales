@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Image Name="IMG1">
+        <Source>Embedded</Source>
+        <Value>logoroberto</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>0.25758cm</Top>
+        <Left>2.0767cm</Left>
+        <Height>1.60583cm</Height>
+        <Width>3.16687cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Venta Cañón</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>1.96925cm</Top>
+        <Left>1.94982cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.29375cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line1">
+        <Top>2.70621cm</Top>
+        <Height>0cm</Height>
+        <Width>7.39278cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>REPORTE DE CORTE DE CAJA</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>2.91349cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>7.15667cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!fechaapertura.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.3066cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>7.15667cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha de inicio de Sesión:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>3.74189cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>4.96085cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Fecha de cierre de Sesión:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>4.87132cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>4.96085cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!fechacierre.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>5.43604cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>7.15667cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!nombre.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>5.96547cm</Top>
+        <Left>1.63232cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>5.48957cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Usuario:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>5.96547cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>1.65356cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!ncaja.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>6.45963cm</Top>
+        <Left>1.61878cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>5.50311cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>No°Caja:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>6.45963cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>1.65356cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Parameters!idSesion.Value</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>6.95379cm</Top>
+        <Left>1.61878cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>5.50311cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Sesión:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>6.95379cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>1.65356cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line2">
+        <Top>7.74912cm</Top>
+        <Height>0cm</Height>
+        <Width>7.6755cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Importe Inicial:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>7.92551cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.10877cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!importeinicial.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>7.92551cm</Top>
+        <Left>3.07399cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>4.0479cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Importe Final:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>8.49022cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.10877cm</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!ImporteFinal.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>8.49022cm</Top>
+        <Left>3.07399cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>4.0479cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Line Name="Line3">
+        <Top>10.14909cm</Top>
+        <Height>0cm</Height>
+        <Width>7.6755cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Rango de Folios:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>8.98438cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.10877cm</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Folios.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>9.47854cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>7.15667cm</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Desglose de Ingresos:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>10.32548cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>4.03481cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line4">
+        <Top>14.38709cm</Top>
+        <Height>0cm</Height>
+        <Width>7.6755cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox21">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Ventas con Cheque:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>11.56074cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.69085cm</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox22">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Ventas con Boucher:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>12.0549cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.69085cm</Width>
+        <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox23">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=sum(Fields!TotalChequeSis.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>11.56075cm</Top>
+        <Left>3.83196cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>3.28943cm</Width>
+        <ZIndex>26</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox24">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TotalEfectivoSis.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>10.99603cm</Top>
+        <Left>3.83247cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>3.28943cm</Width>
+        <ZIndex>27</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox25">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Ventas en Efectivo:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>10.99603cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.69085cm</Width>
+        <ZIndex>28</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox26">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TotalTarjetaSis.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>12.0549cm</Top>
+        <Left>3.83247cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>3.28943cm</Width>
+        <ZIndex>29</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox27">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Suma de Ventas:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>13.5757cm</Top>
+        <Left>0.5473cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>3.10877cm</Width>
+        <ZIndex>30</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox28">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TotalIngresos.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>13.5757cm</Top>
+        <Left>3.83247cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>3.28942cm</Width>
+        <ZIndex>31</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Line Name="Line5">
+        <Top>13.43459cm</Top>
+        <Left>3.7397cm</Left>
+        <Height>0cm</Height>
+        <Width>4.07717cm</Width>
+        <ZIndex>32</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox29">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Firma de Entregado</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>16.15085cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>7.15667cm</Width>
+        <ZIndex>33</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line6">
+        <Top>15.97446cm</Top>
+        <Left>1.33199cm</Left>
+        <Height>0cm</Height>
+        <Width>4.42113cm</Width>
+        <ZIndex>34</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox30">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Firma de Recibido</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>18.35571cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>7.15667cm</Width>
+        <ZIndex>35</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line7">
+        <Top>18.17932cm</Top>
+        <Left>1.45105cm</Left>
+        <Height>0cm</Height>
+        <Width>4.42113cm</Width>
+        <ZIndex>36</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Textbox Name="Textbox31">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Ventas con Vales:</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>12.58434cm</Top>
+        <Height>0.49416cm</Height>
+        <Width>3.69085cm</Width>
+        <ZIndex>37</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox32">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TotalValeSis.Value, "DataSet1")</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>'$'#,0.00;('$'#,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>12.58434cm</Top>
+        <Left>3.83247cm</Left>
+        <Height>0.49416cm</Height>
+        <Width>3.28943cm</Width>
+        <ZIndex>38</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>es-MX</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>7.66079in</Height>
+    <Style />
+  </Body>
+  <Width>3.24774in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SoftSalesDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>ebccd38b-0ea4-46dd-8c97-282902b1face</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>SoftSalesDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="fechaapertura">
+          <DataField>fechaapertura</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="fechacierre">
+          <DataField>fechacierre</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ncaja">
+          <DataField>ncaja</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="idsesion">
+          <DataField>idsesion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="importeinicial">
+          <DataField>importeinicial</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalEfectivoSis">
+          <DataField>TotalEfectivoSis</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalChequeSis">
+          <DataField>TotalChequeSis</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalTarjetaSis">
+          <DataField>TotalTarjetaSis</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="TotalValeSis">
+          <DataField>TotalValeSis</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ImporteFinal">
+          <DataField>ImporteFinal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Folios">
+          <DataField>Folios</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotalIngresos">
+          <DataField>TotalIngresos</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SoftSalesDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Program Files (x86)\SoftSales\SoftSales\SoftSalesDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>CortedeCaja</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>CortedeCajaTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="idSesion">
+      <DataType>Integer</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logoroberto">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>es-MX</Language>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>d19e0d5c-d633-49e4-a0f1-49d8dfeee263</rd:ReportID>
+</Report>

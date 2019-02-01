@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{567CA5EC-427F-4D52-8611-873C92858D7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SoftSales.My.MyApplication</StartupObject>
+    <RootNamespace>SoftSales</RootNamespace>
+    <AssemblyName>SoftSales</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Archivos de Programa%28x86%29\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SoftSales.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SoftSales.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>soft_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2919CB4E1182CDA291D31DA51C7E6FA5B029017E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SoftSales_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADM_Combo_DLL">
+      <HintPath>..\..\..\Users\Manuel\Downloads\ADM_Combo_DLL.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar">
+      <HintPath>..\packages\CircularProgressBar.2.5.6298.4486\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design">
+      <HintPath>..\..\SistemaRoberto\SistemaRoberto\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\SistemaRoberto\SistemaRoberto\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation">
+      <HintPath>..\..\SistemaRoberto\SistemaRoberto\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design">
+      <HintPath>..\..\SistemaRoberto\SistemaRoberto\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="NetBarControl">
+      <HintPath>..\..\iNTERFAZ SOFTSALES\iNTERFAZ SOFTSALES\bin\Debug\NetBarControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WinFormAnimation">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion\Conexiones.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module4.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmAutorizacion.Designer.vb">
+      <DependentUpon>frmAutorizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmAutorizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmCaja.Designer.vb">
+      <DependentUpon>frmCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmCancelarOferta.Designer.vb">
+      <DependentUpon>frmCancelarOferta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmCancelarOferta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmConsultaBit.Designer.vb">
+      <DependentUpon>frmConsultaBit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmConsultaBit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmConsultaDescrip.Designer.vb">
+      <DependentUpon>frmConsultaDescrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmConsultaDescrip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmConsultaVenta.Designer.vb">
+      <DependentUpon>frmConsultaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmConsultaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmCorteCaja.Designer.vb">
+      <DependentUpon>frmCorteCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmCorteCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmEmpleados.Designer.vb">
+      <DependentUpon>frmEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmFormaPago.Designer.vb">
+      <DependentUpon>frmFormaPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmFormaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmFormasPago.Designer.vb">
+      <DependentUpon>frmFormasPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmFormasPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmMensajes.Designer.vb">
+      <DependentUpon>frmMensajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmMensajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmArticulos.Designer.vb">
+      <DependentUpon>frmArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmOfertas.Designer.vb">
+      <DependentUpon>frmOfertas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmOfertas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmPreConsulta.Designer.vb">
+      <DependentUpon>frmPreConsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmPreConsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmProductoVario.Designer.vb">
+      <DependentUpon>frmProductoVario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmProductoVario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmSesion.Designer.vb">
+      <DependentUpon>frmSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmVentas.Designer.vb">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\frmVerSesion.Designer.vb">
+      <DependentUpon>frmVerSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmVerSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCortedeCaja.Designer.vb">
+      <DependentUpon>FrmCortedeCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCortedeCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDepto.Designer.vb">
+      <DependentUpon>frmDepto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDepto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReportes.Designer.vb">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReportesVentas.Designer.vb">
+      <DependentUpon>frmReportesVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReportesVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmTicket.Designer.vb">
+      <DependentUpon>frmTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmTicket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftSalesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoftSalesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SoftSalesDataSet.vb">
+      <DependentUpon>SoftSalesDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmAutorizacion.resx">
+      <DependentUpon>frmAutorizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmCaja.resx">
+      <DependentUpon>frmCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmCancelarOferta.resx">
+      <DependentUpon>frmCancelarOferta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmConsultaBit.resx">
+      <DependentUpon>frmConsultaBit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmConsultaDescrip.resx">
+      <DependentUpon>frmConsultaDescrip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmConsultaVenta.resx">
+      <DependentUpon>frmConsultaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmCorteCaja.resx">
+      <DependentUpon>frmCorteCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmEmpleados.resx">
+      <DependentUpon>frmEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmFormaPago.resx">
+      <DependentUpon>frmFormaPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmFormasPago.resx">
+      <DependentUpon>frmFormasPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmMensajes.resx">
+      <DependentUpon>frmMensajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmArticulos.resx">
+      <DependentUpon>frmArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmOfertas.resx">
+      <DependentUpon>frmOfertas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmPreConsulta.resx">
+      <DependentUpon>frmPreConsulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmProductoVario.resx">
+      <DependentUpon>frmProductoVario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmSesion.resx">
+      <DependentUpon>frmSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmVentas.resx">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmVerSesion.resx">
+      <DependentUpon>frmVerSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCortedeCaja.resx">
+      <DependentUpon>FrmCortedeCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDepto.resx">
+      <DependentUpon>frmDepto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReportes.resx">
+      <DependentUpon>frmReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReportesVentas.resx">
+      <DependentUpon>frmReportesVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmTicket.resx">
+      <DependentUpon>frmTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Report3.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteArticulosCompleto.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteArticulosXDepto.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteArticulosXMarca.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteCorteCaja.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVendedores.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasDiaCheque.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasDiaChequeCajeros.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasDiaEfectivo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasDiaEfectivoCajeros.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasDiaTarjet.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasDiaTarjetaCajeros.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechas.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechasCheque.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechasChequeCajeros.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechasEfectivo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechasEfectivoCajeros.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechasTarjeta.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasFechasTarjetaCajeros.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteVentasxDia.rdlc" />
+    <EmbeddedResource Include="Reportes\Ticket.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="SoftSalesDataSet.xsc">
+      <DependentUpon>SoftSalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SoftSalesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SoftSalesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SoftSalesDataSet.xss">
+      <DependentUpon>SoftSalesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SoftSales_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19021479_1671193346248592_1414681670_n.png" />
+    <None Include="Resources\sofsales.png" />
+    <None Include="Resources\nuevo.png" />
+    <None Include="Resources\EDITAR.png" />
+    <None Include="Resources\GUARDAR.png" />
+    <None Include="Resources\SALIR.png" />
+    <None Include="Resources\ACTUALIZAR.png" />
+    <None Include="Resources\btn_cerrar.png" />
+    <None Include="Resources\autorizacion.png" />
+    <None Include="Resources\btn_ingresar_log1.png" />
+    <None Include="Resources\cajas.png" />
+    <None Include="Resources\btn_min.png" />
+    <None Include="Resources\imprimir.png" />
+    <None Include="Resources\aceptar.png" />
+    <None Include="Resources\cancelar.png" />
+    <None Include="Resources\BTCERRAR.png" />
+    <None Include="Resources\catalogo.png" />
+    <None Include="Resources\articulosv.png" />
+    <None Include="Resources\btbuscar.png" />
+    <None Include="Resources\logos.png" />
+    <None Include="Resources\login2.png" />
+    <None Include="Resources\roberto.png" />
+    <None Include="Resources\btn_ingresar.png" />
+    <None Include="Resources\prod-varios.png" />
+    <None Include="Resources\btelireg.png" />
+    <None Include="Resources\reporte-ventas-dia.png" />
+    <None Include="Resources\reporte-ventas-x-fecha.png" />
+    <None Include="Resources\reporte-ventas-efectivo.png" />
+    <None Include="Resources\reporte-ventas-por-empleado.png" />
+    <None Include="Resources\reporte-ventas-tarjeta.png" />
+    <None Include="Resources\Consultar.png" />
+    <None Include="Resources\movimientos.png" />
+    <None Include="Resources\reportes.png" />
+    <None Include="Resources\utilidades.png" />
+    <None Include="Resources\ayuda.png" />
+    <None Include="Resources\emplear.png" />
+    <None Include="Resources\cb.png" />
+    <None Include="Resources\cajav.png" />
+    <None Include="Resources\oferta.png" />
+    <None Include="Resources\ofertacan.png" />
+    <None Include="Resources\reporte-articulos.png" />
+    <None Include="Resources\reporte-articulos-existencia.png" />
+    <None Include="Resources\reporte-empleados.png" />
+    <None Include="Resources\reporte-ventas.png" />
+    <None Include="Resources\respaldo.png" />
+    <None Include="Resources\restaurar.png" />
+    <None Include="Resources\bitacora.png" />
+    <None Include="Resources\importar-excel.png" />
+    <None Include="Resources\guardar-excel.png" />
+    <None Include="Resources\reporte-departamento-marca.png" />
+    <Content Include="soft_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
